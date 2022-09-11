@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+
+.logo a {
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    padding-left: 30px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1;
+}
+
+#side-drawer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(29, 26, 27);
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#side-drawer:target {
+    display: block;
+}
+
+
+#side-drawer ul {
+    list-style: none;
+    margin: 0;
+    padding: 4rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#side-drawer li {
+    width: 100%;
+    height: 50px;
+    border: 1px solid white;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    padding-bottom: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    padding: 0 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+nav a:hover,
+nav a:active {
+    color: #777;
+    text-decoration: underline 3px solid;
+}
+
+.but {
+    margin-left: 500px;
+    margin-right: 0px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: rgb(245, 37, 37);
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 20px;
+}
+
+.but:hover {
+    text-decoration: none;
+    color: rgb(19, 17, 17);
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    background-image: url('/images/background-image/tamara-bellis-HY1fq4ZtLTE-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 100%;
+}
+
+.content-info {
+    width: 500px;
+    position: relative;
+    text-align: left;
+    top: 250px;
+    left: -110px;
+    padding: 20px 0;
+    margin: 0 auto;
+}
+
+.content-info h2 {
+    color: rgb(255, 254, 254);
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.content-info p {
+    color: rgb(248, 248, 248);
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+
+.buy {
+    text-decoration: none;
+    background-color: rgb(245, 37, 37);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.buy:hover {
+    color: black;
+    transition: 0.8s ease-in-out;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    padding-left: 30px;
+}
+
+.form-info {
+    padding-top: 20px;
+}
+
+.form-info h3 {
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.form-info p {
+    font-size: 17px;
+    margin-bottom: 0px;
+    letter-spacing: 1px;
+}
+
+.form-news {
+    width: 400px;
+}
+
+.form-news input {
+    font-size: 30px;
+    margin-top: 30px; 
+}
+
+.form-news input::placeholder {
+    font-size: 15px;
+}
+
+.form-news .email {
+    width: 270px;
+    font-size: 20px;
+    margin-left: 0;
+}
+
+
+.form-news a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(245, 37, 37);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+    margin-bottom: 10px;
+}
+
+.form-news a:hover {
+    color: black;
+    transition: 0.8s ease-in;
+}
+
+.social-links {
+    margin-left: 0;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 5px 8px;
+}
+
+.social-links a:hover {
+    transform: scale(1.5);
+    transition: transform 1s ease 0.1s;
+}
+
+.info {
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+@media (max-width: 48rem) {
+    header {
+        position: relative;
+        z-index: 0;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .menu-btn {
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    
+    .menu-btn span {
+        width: 80%;
+        height: 3px;
+        background-color: black;
+        transition: 0.4s;
+    }
+
+    .menu-btn .bar1 {
+        transform: rotate(-45deg) translate(-11px, 2px);
+    }
+
+    .menu-btn .bar2 {
+        opacity: 0;
+    }
+
+    .menu-btn .bar3 {
+        transform: rotate(45deg) translate(-1px, 8px);
+    }
+
+    #side-drawer header {
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 5%;
+    }
+
+    #side-drawer a {
+        display: flex;
+        font-size: 1.2rem;
+        color: rgb(230, 191, 191);
+        text-align: left;
+        justify-content: center;
+        cursor: pointer;
+        padding: 20px 0;
+    }
+    .content {
+        width: 100%;
+    }
+    .content-info   {
+        width: 100%;
+        text-align: center;
+        top: 270px;
+        left: 0;
+    }
+
+    .content-info h2 {
+        font-size: 3.5rem;
+    }
+
+    .content-info p {
+        font-size: 1.2rem;
+        padding-bottom: 30px;
+        padding-inline: 5px;
+    }
+
+    .buy {
+        font-size: 1.3rem;
+        padding: 14px 25px;
+        margin-top: 10px;
+    }
+
+    footer {
+        width: 100%;
+        height: 400px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .form-info {
+        width: 100%;
+    }
+
+    .form-info p {
+        text-align: center;
+    }
+
+    .form-news {
+        width: 100%;
+    }
+
+    .form-news input {
+        margin-left: 0px;
+    }
+
+    .form-news .email {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+
+    .form-news a {
+        margin-left: 0;
+        padding: 14px 25px;
+        font-size: 1.3rem;
+    }
+
+    .social-links {
+        margin-left: 0;
+    }
+}

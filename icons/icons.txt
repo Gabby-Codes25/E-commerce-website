@@ -1,0 +1,12 @@
+<i class="fa-regular fa-cart-shopping"></i>
+<i class="fa-solid fa-address-card"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-square-instagram"></i>
+<i class="fa-brands fa-square-twitter"></i>
+<i class="fa-solid fa-shop"></i>
+<i class="fa-regular fa-address-book"></i>
+<i class="fa-solid fa-house"></i>
+<i class="fa-solid fa-envelope"></i>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
